@@ -1,0 +1,110 @@
+/* Border Shadows ----------------------------------------------
+---------------------------------------------------------------- */
+
+/* Uniform ----------------------------- */
+
+// .boxShadow-primary {
+// 	@include box-shadow(inset 0 0 0 1px palette(primary, base));
+// }
+
+/* Default */
+
+.boxShadow-default, .boxShadow-default--hover:hover, .input, input[type=text] {
+	@include box-shadow(inset 0 0 0 1px palette(cloud, xx-light));
+}
+
+/* Primary */
+
+.boxShadow-primary, .boxShadow-primary--hover:hover, .input:focus, input[type=text]:focus {
+	@include box-shadow(inset 0 0 0 1px palette(primary, base));
+}
+
+/* Secondary */
+
+.boxShadow-secondary, .boxShadow-secondary--hover:hover {
+	@include box-shadow(inset 0 0 0 1px palette(secondary, base));
+}
+
+
+/* Positive */
+
+.boxShadow-positive, .boxShadow-positive--hover:hover {
+	@include box-shadow(inset 0 0 0 1px $positive);
+}
+
+/* Error */
+
+.boxShadow-negative, .input.has-error, input[type=text].has-error .input.has-error:focus, input[type=text].has-error:focus {
+	@include box-shadow(inset 0 0 0 1px $negative);
+}
+
+/* Warning */
+
+.boxShadow-warning, .input.has-warning, input[type=text].has-warning .input.has-warning:focus, input[type=text].has-warning:focus {
+	@include box-shadow(inset 0 0 0 1px $warning);
+}
+
+
+/* Perspective Shadows -----------------------------------------
+---------------------------------------------------------------- */
+
+.boxShadow-distant {
+	@include box-shadow(0 4px 6px rgba(50,50,93,.11));
+}
+
+.boxShadow-distant--soft {
+	@include box-shadow(0 4px 6px rgba(50,50,93,.04));
+}
+
+.boxShadow-close {
+	@include box-shadow(0 1px 2px 0 rgba(190,202,216,.2));
+}
+
+.boxShadow-closeReversed {
+	@include box-shadow(0 -1px 2px 0 rgba(31,45,61,.1));
+}
+
+.boxShadow-subtle {
+
+}
+
+
+/* 3D Shadows --------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Default ----------------------------- */
+
+.boxShadow-emboss, .boxShadow-emboss--hover:hover {
+	@include box-shadow(inset 0 -2px 0 rgba(31,45,61,.15));
+}
+
+/* cloud ------------------------------- */
+
+.boxShadow-emboss--cloud, .boxShadow-emboss--cloud--hover:hover {
+	@include box-shadow(inset 0 -2px 0 palette(cloud, base));
+}
+
+/* cloud -------------------------------- */
+
+.boxShadow-emboss--cloud, .boxShadow-emboss--cloud--hover:hover {
+	@include box-shadow(inset 0 -2px 0 palette(cloud, mid-dark));
+}
+
+/* White */
+
+.boxShadow-white, .boxShadow-white:hover {
+	@include box-shadow(inset 0 0 0 1px $white);
+}
+
+/* None --------------------------------- */
+
+.boxShadow-none, .boxShadow-none--hover:hover {
+	@include box-shadow(none);
+}
+
+/* Override ----------------------------------------------------
+---------------------------------------------------------------- */
+
+.boxShadow-default--hover:hover {
+	@include box-shadow(inset 0 0 0 1px palette(cloud, base));
+}

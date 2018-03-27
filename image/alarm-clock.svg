@@ -1,0 +1,20 @@
+
+<svg width="50px" height="52px" viewBox="0 0 50 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="filled" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Artboard" transform="translate(-426.000000, -1385.000000)" stroke="#5081F5" stroke-width="2">
+            <g id="Alarmclock" transform="translate(423.000000, 1383.000000)">
+                <circle id="Oval-1445" fill="#e0e9fd" stroke-linecap="round" cx="28" cy="31" r="20"></circle>
+                <path d="M18,49 L14,53" id="Line" stroke-linecap="round"></path>
+                <path d="M41,49 L37,53" id="Line-358" stroke-linecap="round" transform="translate(39.000000, 51.000000) scale(-1, 1) translate(-39.000000, -51.000000) "></path>
+                <polyline id="Path-3673" stroke-linecap="round" points="13.994634 31.0637521 28.1427243 33.0637521 37.5951642 20.0637521"></polyline>
+                <path d="M20,13 C20,8.02943725 15.9705627,4 11,4 C6.02943725,4 2,8.02943725 2,13 L20,13 Z" id="Oval-1446" fill="#e0e9fd" stroke-linecap="round" transform="translate(11.000000, 8.500000) rotate(-30.000000) translate(-11.000000, -8.500000) "></path>
+                <path d="M54,13 C54,8.02943725 49.9705627,4 45,4 C40.0294373,4 36,8.02943725 36,13 L54,13 Z" id="Oval-1447" fill="#e0e9fd" stroke-linecap="round" transform="translate(45.000000, 8.500000) scale(-1, 1) rotate(-30.000000) translate(-45.000000, -8.500000) "></path>
+                <path d="M28,15 L28,17" id="Line" stroke-linecap="square"></path>
+                <path d="M28,45 L28,47" id="Line-359" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

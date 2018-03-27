@@ -1,0 +1,89 @@
+/* Form Control ------------------------------------------------
+---------------------------------------------------------------- */
+
+.form-control {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 45px;
+  line-height: 30px;
+}
+
+/* Hide Default Input ------------------------------------------
+---------------------------------------------------------------- */
+
+.form-control input {
+  opacity: 0;
+}
+
+.form-control-indicator {
+  @include box-shadow(inset 0 0 0 2px #e0e6ed);
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.form-control input {
+  position: absolute;
+}
+
+.checkbox input:checked~.form-control-indicator {
+  @include box-shadow(inset 0 0 0 2px #13ce66);
+  background-color: #13ce66;
+}
+
+.checkbox-tick, .form-control-indicator,
+.checkbox input:checked~.form-control-indicator .checkbox-tick,
+.form-control input:active~.form-control-indicator,
+.form-control input:checked~.form-control-indicator {
+  @include transition-property(all);
+  @include transition-duration(.5s);
+  @include transition-timing-function(cubic-bezier(0,.89,.44,1));
+}
+
+.form-control input:focus~.form-control-indicator {
+  @include box-shadow(inset 0 0 0 2px $positive);
+}
+
+.form-control .form-control-indicator {
+  width: 30px;
+  height: 30px;
+}
+
+/* Form Control ------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Indicator --------------------------- */
+
+.form-control-indicator, .userSelect-none {
+  @include user-select(none);
+}
+
+
+
+
+/* Checkbox ----------------------------------------------------
+---------------------------------------------------------------- */
+
+.checkbox .form-control-indicator {
+  border-radius: 4px;
+}
+
+/* Tick -------------------------------- */
+
+.checkbox-tick {
+  @include transform(scale(0));
+}
+
+.checkbox input:checked~.form-control-indicator .checkbox-tick {
+  opacity: 100;
+  @include transform(scale(1));
+}
+
+svg.checkbox-tick * {
+  fill: #fff;
+}
+
+.checkbox:last-child label {
+  margin-bottom: 0;
+}

@@ -1,0 +1,37 @@
+/* Overlay -----------------------------------------------------
+---------------------------------------------------------------- */
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+/* Visibility ---------------------------- */
+
+/* Invisible */
+
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Visible */
+
+.overlay-trigger:hover .overlay,
+.overlay.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Media Query -------------------------------------------------
+---------------------------------------------------------------- */
+
+@media only screen and (min-width : 768px) {
+  .overlay-open--breakPoint {
+    visibility: hidden;
+  }
+}

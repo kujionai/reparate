@@ -1,0 +1,340 @@
+/* Margin ------------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Uniform ----------------------------- */
+
+.margin-0 {
+	margin: 0;
+}
+
+.margin-xxs {
+	margin: 5px;
+}
+
+.margin-xs {
+	margin: 10px;
+}
+
+.margin-s {
+	margin: 15px;
+}
+
+.margin-m {
+	margin: 20px;
+}
+
+.margin-l {
+	margin: 40px;
+}
+
+.margin-xl {
+	margin: 80px;
+}
+
+/* Individual -------------------------- */
+
+/* None */
+
+.marginTop-0 {
+	margin-top: 0;
+}
+
+.marginRight-0 {
+	margin-right: 0;
+}
+
+.marginBottom-0 {
+	margin-bottom: 0;
+}
+
+.marginLeft-0 {
+	margin-left: 0;
+}
+
+/* XX-Small */
+
+.marginTop-xxs {
+	margin-top: 5px;
+}
+
+.marginRight-xxs {
+	margin-right: 5px;
+}
+
+.marginBottom-xxs {
+	margin-bottom: 5px;
+}
+
+.marginLeft-xxs {
+	margin-left: 5px;
+}
+
+/* X-Small */
+
+.marginTop-xs {
+	margin-top: 10px;
+}
+
+.marginRight-xs {
+	margin-right: 10px;
+}
+
+.marginBottom-xs {
+	margin-bottom: 10px;
+}
+
+.marginLeft-xs {
+	margin-left: 10px;
+}
+
+/* Small */
+
+.marginTop-s {
+	margin-top: 15px;
+}
+
+.marginRight-s {
+	margin-right: 15px;
+}
+
+.marginBottom-s {
+	margin-bottom: 15px;
+}
+
+.marginLeft-s {
+	margin-left: 15px;
+}
+
+/* Medium */
+
+.marginTop-m {
+	margin-top: 20px;
+}
+
+.marginRight-m {
+	margin-right: 20px;
+}
+
+.marginBottom-m {
+	margin-bottom: 20px;
+}
+
+.marginLeft-m {
+	margin-left: 20px;
+}
+
+/* Large */
+
+.marginTop-l {
+	margin-top: 40px;
+}
+
+.marginRight-l {
+	margin-right: 40px;
+}
+
+.marginBottom-l {
+	margin-bottom: 40px;
+}
+
+.marginLeft-l {
+	margin-left: 40px;
+}
+
+/* X-Large */
+
+.marginTop-xl {
+	margin-top: 80px;
+}
+
+.marginRight-xl {
+	margin-right: 80px;
+}
+
+.marginBottom-xl {
+	margin-bottom: 80px;
+}
+
+.marginLeft-xl {
+	margin-left: 80px;
+}
+
+
+/* Padding -----------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Uniform ----------------------------- */
+
+.padding-0 {
+	padding: 0;
+}
+
+.padding-xxs {
+	padding: 5px;
+}
+
+.padding-xs {
+	padding: 10px;
+}
+
+.padding-s {
+	padding: 15px;
+}
+
+.padding-m {
+	padding: 20px;
+}
+
+.padding-l {
+	padding: 40px;
+}
+
+.padding-xl {
+	padding: 80px;
+}
+
+/* Individual -------------------------- */
+
+/* None */
+
+.paddingTop-0 {
+	padding-top: 0;
+}
+
+.paddingRight-0 {
+	padding-right: 0;
+}
+
+.paddingBottom-0 {
+	padding-bottom: 0;
+}
+
+.paddingLeft-0 {
+	padding-left: 0;
+}
+
+/* XX-Small */
+
+.paddingTop-xxs {
+	padding-top: 5px;
+}
+
+.paddingRight-xxs {
+	padding-right: 5px;
+}
+
+.paddingBottom-xxs {
+	padding-bottom: 5px;
+}
+
+.paddingLeft-xxs {
+	padding-left: 5px;
+}
+
+/* X-Small */
+
+.paddingTop-xs {
+	padding-top: 10px;
+}
+
+.paddingRight-xs {
+	padding-right: 10px;
+}
+
+.paddingBottom-xs {
+	padding-bottom: 10px;
+}
+
+.paddingLeft-xs {
+	padding-left: 10px;
+}
+
+/* Small */
+
+.paddingTop-s {
+	padding-top: 15px;
+}
+
+.paddingRight-s {
+	padding-right: 15px;
+}
+
+.paddingBottom-s {
+	padding-bottom: 15px;
+}
+
+.paddingLeft-s {
+	padding-left: 15px;
+}
+
+/* Medium */
+
+.paddingTop-m {
+	padding-top: 20px;
+}
+
+.paddingRight-m {
+	padding-right: 20px;
+}
+
+.paddingBottom-m {
+	padding-bottom: 20px;
+}
+
+.paddingLeft-m {
+	padding-left: 20px;
+}
+
+/* Large */
+
+.paddingTop-l {
+	padding-top: 40px;
+}
+
+.paddingRight-l {
+	padding-right: 40px;
+}
+
+.paddingBottom-l {
+	padding-bottom: 40px;
+}
+
+.paddingLeft-l {
+	padding-left: 40px;
+}
+
+/* X-Large */
+
+.paddingTop-xl {
+	padding-top: 80px;
+}
+
+.paddingRight-xl {
+	padding-right: 80px;
+}
+
+.paddingBottom-xl {
+	padding-bottom: 80px;
+}
+
+.paddingLeft-xl {
+	margin-left: 80px;
+}
+
+
+/* Breakpoint --------------------------------------------------
+---------------------------------------------------------------- */
+
+
+/* Media Query -------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Small Devices, Tablets -------------- */
+
+@media only screen and (min-width : 768px) {
+
+ .paddingTop-0 {
+		padding-top: 0;
+	}
+
+}

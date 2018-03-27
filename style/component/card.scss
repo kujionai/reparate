@@ -1,0 +1,33 @@
+/* Card w/ Top ----------------------------------------------------
+---------------------------------------------------------------- */
+
+.card-top {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+
+/* Card w/ Merge -----------------------------------------------
+---------------------------------------------------------------- */
+
+.card-group .card-wrapper:first-child .card {
+	border-radius: 4px 4px 0 0;
+}
+
+/* Media Query --------------------------- */
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width : 768px) {
+	.card-group .card-wrapper:first-child .card {
+		border-radius: 4px 0 0 0;
+	}
+
+	.card-group .card-wrapper:last-child .card {
+		border-radius: 0 4px 0 0;
+	}
+}

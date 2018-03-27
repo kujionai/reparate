@@ -1,0 +1,52 @@
+/* Link --------------------------------------------------------
+---------------------------------------------------------------- */
+
+.link, a {
+	cursor: pointer;
+	text-decoration: none;
+	@include transition(all .2s);
+}
+
+.link--underline {
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 1px 2px;
+	padding-bottom: 2px;
+	// &:hover {
+	// 	margin-bottom: 0px;
+	// 	padding-bottom: 2px;
+	// }
+}
+
+.link--dark.link--underline {
+	background-image: -webkit-linear-gradient(top, transparent 0%, palette(black, base) 0);
+	background-image: linear-gradient(180deg, transparent 0%, palette(black, base) 0);
+}
+
+.link--light.link--underline {
+	background-image: -webkit-linear-gradient(top, transparent 0%, palette(cloud, base) 0);
+	background-image: linear-gradient(180deg, transparent 0%, palette(cloud, base) 0);
+	&:hover {
+		background-image: -webkit-linear-gradient(top, transparent 0%, palette(black, base) 0);
+		background-image: linear-gradient(180deg, transparent 0%, palette(black, base) 0);
+	}
+}
+
+.link--white {
+	color: $white;
+}
+
+.link--white.link--underline, a.link--white.link--underline {
+	background-image: -webkit-linear-gradient(top, transparent 0%, $white 0);
+	background-image: linear-gradient(180deg, transparent 0%, $white 0);
+}
+
+.link--heavy {
+	background-size: 1px 2px;
+	padding-bottom: 2px;
+}
+
+.link--positive, .link--positive--hover:hover {
+	background-image: -webkit-linear-gradient(top, transparent 0%, $positive 0);
+	background-image: linear-gradient(180deg, transparent 0%, $positive 0);
+}

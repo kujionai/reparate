@@ -1,0 +1,100 @@
+/* Navigation Toggle Icon ---------------------------------------------------
+---------------------------------------------------------------- */
+
+div.navigation-toggle-icon__wrapper {
+	position: relative;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navigation-toggle-icon {
+	height: 20px;
+	width: 20px;
+	.middle {
+		width: 15px;
+	}
+	cursor: pointer;
+	&.active {
+		.top {
+			transform: translateY(6px) translateX(0) rotate(45deg);
+			background: $white;
+		}
+		.middle {
+			opacity: 0;
+			background: $white;
+		}
+		.bottom {
+			transform: translateY(-6px) translateX(0) rotate(-45deg);
+			background: $white;
+		}
+	}
+	span {
+		background: palette(black, base);
+		height: 2px;
+		border-radius: 10px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition:  all .2s ease;
+		&:nth-of-type(2) {
+			top: 6px;
+		}
+		&:nth-of-type(3) {
+			top: 12px;
+		}
+	}
+}
+
+.nav--desktop {
+	display: none;
+}
+
+.nav--mobile, #nav-overlay {
+	display: inline-block;
+}
+
+/* Media Query -------------------------------------------------
+---------------------------------------------------------------- */
+
+@media only screen and (min-width : 768px) {
+	.nav--desktop {
+		display: inline-block;
+	}
+	.nav--mobile {
+		display: none;
+	}
+	#nav-overlay {
+		display: none;
+	}
+}
+
+/* Bottom Nav --------------------------------------------------
+---------------------------------------------------------------- */
+
+.nav--top, .nav--bottom, .nav--top-mobile {
+	@include transition(all 0.3s);
+}
+
+.nav--top, .nav--bottom {
+	width: 100%;
+	display: block;
+	position: fixed;
+}
+
+.nav--top, .nav--top-mobile {
+	@include transform(translate3d(0, -200%, 0));
+	top: 0;
+}
+
+.nav--bottom {
+	@include transform(translate3d(0, 200%, 0));
+	bottom: 0;
+}
+
+.is-visible {
+	@include transform(translate3d(0, 0, 0));
+	z-index: 1000;
+}

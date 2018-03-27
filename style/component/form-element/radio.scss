@@ -1,0 +1,47 @@
+/* Radio -------------------------------------------------------
+---------------------------------------------------------------- */
+
+.radio .form-control-indicator {
+  border-radius: 50%;
+}
+
+/* Checked ----------------------------- */
+
+.radio input:checked~.form-control-indicator {
+  @include box-shadow(inset 0 0 0 10px #13ce66);
+}
+
+/* Multiple (Default) ------------------ */
+
+.radio:first-child .radio-inner {
+	border-radius: 4px 4px 0 0;
+	border-top-width: 1px;
+}
+
+.radio:last-child .radio-inner {
+	border-radius: 0 0 4px 4px;
+}
+
+/* Boolean ----------------------------- */
+
+// .radio-boolean {
+// 	font-size: 0;
+// }
+
+.radio-boolean .radio {
+	display: inline-block;
+	.radio-inner {
+		border-top-width: 1px;
+	}
+}
+
+/* Border */
+
+.radio-boolean .radio:first-child .radio-inner {
+	border-radius: 4px 0 0 4px;
+	border-right-width: 0;
+}
+
+.radio-boolean .radio:last-child .radio-inner {
+	border-radius: 0 4px 4px 0;
+}

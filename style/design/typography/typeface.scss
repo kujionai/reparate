@@ -1,0 +1,13 @@
+/* Typeface ----------------------------------------------------
+---------------------------------------------------------------- */
+
+.fontFamily-Lato, body, button, html, input, select, textarea, .grid--1, .grid--2, .grid--3, .grid--4, .grid--5, .grid--6, .grid--2-3, .grid--3-4, * {
+  font-family: 'Open Sans', sans-serif;
+  @include font-smoothing(antialiased);
+  color: palette(black, base);
+  // letter-spacing: 0.02em;
+}
+
+// .fontFamily-lato {
+//   font-family: 'Lato', sans-serif;
+// }

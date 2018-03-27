@@ -1,0 +1,93 @@
+/* List --------------------------------------------------------
+---------------------------------------------------------------- */
+
+ul li {
+	list-style-type: none;
+}
+
+
+/* Unordered ---------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Bullet ------------------------------ */
+
+ul.ul--bullet li {
+	&::after {
+		top: 7px;
+		background: url("data:image/svg+xml;utf8,<?xml version='1.0' standalone='no'?><svg width='12cm' height='4cm' viewBox='0 0 1600 1600' xmlns='http://www.w3.org/2000/svg' version='1.1'><circle cy='1050' cx='800' r='360' fill='#05aeff' stroke='#05aeff' stroke-width='10' /></svg>");
+	}
+}
+
+/* Checkmark --------------------------- */
+
+ul.ul--checkmark li {
+	&::after {
+		top: 3;
+		background: url("data:image/svg+xml;utf8,<svg width='325px' height='325px' viewBox='0 0 325 325' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'> <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch --> <desc>Created with Sketch.</desc> <defs></defs> <g id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'> <g id='Desktop' transform='translate(-346.000000, -1014.000000)'> <g id='make-the-space-your-own' transform='translate(-349.000000, 660.000000)'> <g id='text' transform='translate(707.000000, 195.000000)'> <g id='Group'> <g id='ul' transform='translate(0.000000, 168.000000)'> <g id='li-1'> <g id='icon-copy-5' transform='translate(0.000000, 3.000000)'> <circle id='Oval' stroke='#FFCB6A' stroke-width='24' cx='150.5' cy='150.5' r='150.5'></circle> <g id='check' transform='translate(77.000000, 99.000000)' fill='#FFCB6A'> <g id='pt-2' transform='translate(97.961976, 58.698942) rotate(-138.000000) translate(-97.961976, -58.698942) translate(81.961976, -4.801058)'> <ellipse id='Oval-4' cx='15.8259518' cy='109.862065' rx='15.8259518' ry='16.237935'></ellipse> <rect id='Rectangle-11-Copy-2' x='0' y='16.237935' width='31.6519037' height='93.6241299'></rect> <ellipse id='Oval-4-Copy-5' cx='15.8259518' cy='16.237935' rx='15.8259518' ry='16.237935'></ellipse> </g> <g id='pt-1' transform='translate(39.057845, 64.487235) scale(-1, -1) rotate(-42.000000) translate(-39.057845, -64.487235) translate(23.057845, 24.987235)'> <ellipse id='Oval-4-Copy-4' cx='15.8259518' cy='63.1594681' rx='15.8259518' ry='14.8905319'></ellipse> <rect id='Rectangle-11-Copy-3' x='0' y='-1.42108547e-14' width='31.6519037' height='63.2186888'></rect> </g> </g> </g> </g> </g> </g> </g> </g> </g> </g> </svg>");
+	}
+}
+
+/* General ----------------------------- */
+
+ul.ul--checkmark li, ul.ul--bullet li {
+	margin-left: 20px;
+	margin-bottom: 14px;
+	position: relative;
+	list-style-type: none;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&::after {
+		position: absolute;
+		right: calc(100% + 10px);
+		height: 20px;
+		width: 20px;
+		content: '';
+		list-style-image: url("");
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
+	}
+}
+
+
+/* Ordered -----------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Numbered ----------------------------- */
+
+ol.ol--numbered {
+	counter-reset: li;
+	list-style: none;
+	*list-style: decimal;
+}
+
+ol.ol--numbered li {
+	margin-bottom: 14px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+ol.ol--numbered p {
+	position: relative;
+	display: block;
+	padding: 0 0 0 40px;
+	text-decoration: none;
+}
+
+ol.ol--numbered p:before{
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	left: 0;
+	top: 3;
+	background: palette(primary, base);
+	height: 1.5em;
+	width: 1.5em;
+	line-height: 1.5em;
+	text-align: center;
+	font-weight: 600;
+	border-radius: 50%;
+	color: $white;
+	font-size: 16px;
+}

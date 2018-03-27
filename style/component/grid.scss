@@ -1,0 +1,160 @@
+/* Page Wrap ---------------------------------------------------
+---------------------------------------------------------------- */
+
+.pageWrap {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+}
+
+/* XX-Small ---------------------------- */
+
+.pageWrap--xxs {
+	max-width: 580px;
+}
+
+/* X-Small ----------------------------- */
+
+.pageWrap--xs {
+	max-width: 660px;
+}
+
+/* Small ------------------------------- */
+
+.pageWrap--s {
+	max-width: 768px;
+}
+
+/* Medium ------------------------------ */
+
+.pageWrap--m {
+	max-width: 992px;
+}
+
+/* Large ------------------------------- */
+
+.pageWrap--l {
+	max-width: 1200px;
+}
+
+
+/* Width -------------------------------------------------------
+---------------------------------------------------------------- */
+
+.width-100 {
+	width: 100%;
+}
+
+
+/* Height ------------------------------------------------------
+---------------------------------------------------------------- */
+
+.height-100 {
+	height: 100%;
+}
+
+.width-minusSibling {
+	width: 100% !important;
+}
+
+
+/* Grid --------------------------------------------------------
+---------------------------------------------------------------- */
+
+.grid {
+	letter-spacing: 0;
+}
+
+.grid--1, .grid--2, .grid--3, .grid--4, .grid--5, .grid--6, .grid--2-3, .grid--3-4, .grid--3-5, .grid--2-5 {
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px;
+	font-size: 18px;
+	width: 100%
+}
+
+
+/* Media Query -------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Extra Small Devices, Phones --------- */
+
+@media only screen and (min-width : 480px) {
+	.grid--4, .grid--5, .grid--6 {
+		width: 50%;
+	}
+}
+
+/* Small Devices, Tablets -------------- */
+
+@media only screen and (min-width : 768px) {
+
+	/* 2 Columns */
+
+	.grid--2, .grid--3, .grid--2-3, .grid--3-4, .grid--4 {
+		width: 50%;
+	}
+
+	.grid--5, .grid--6 {
+		width: 33.3333%;
+	}
+
+}
+
+/* Medium Devices, Desktops ------------ */
+
+@media only screen and (min-width : 992px) {
+
+	/* 3 Columns */
+
+	.grid--3 {
+		width: 33.3333%;
+	}
+
+	/* 4 Columns */
+
+	.grid--4 {
+		width: 25%;
+	}
+
+	/* 5 Columns */
+
+	.grid--5 {
+		width: 20%;
+	}
+
+	.grid--3-5 {
+		width: 60%;
+	}
+
+	.grid--2-5 {
+		width: 40%;
+	}
+
+	/* 6 Columns */
+
+	.grid--6 {
+		width: 16.6666%;
+	}
+
+	/* 2/3 Columns */
+
+	.grid--2-3 {
+		width: 66.6666%;
+	}
+
+	/* 3/4 Columns */
+
+	.grid--3-4 {
+		width: 75%;
+	}
+
+}
+
+
+/* Override ----------------------------------------------------
+---------------------------------------------------------------- */
+
+.padding-0 {
+	padding: 0;
+}

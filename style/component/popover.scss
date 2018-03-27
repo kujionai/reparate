@@ -1,0 +1,328 @@
+/* Display -----------------------------------------------------
+---------------------------------------------------------------- */
+
+.popover-trigger {
+  display: inline-block;
+}
+
+
+/* Position ----------------------------------------------------
+---------------------------------------------------------------- */
+
+.popover-trigger {
+  position: relative;
+}
+
+.popover,
+.popover.has-caret:after {
+  position: absolute;
+  border-radius: 4px;
+}
+
+
+/* Margin ------------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Top --------------------------------- */
+
+.popover--top {
+  margin-bottom: 15px;
+}
+
+/* Bottom ------------------------------ */
+
+.popover--bottom {
+  margin-top: 15px;
+}
+
+/* Right ------------------------------- */
+
+.popover--right {
+  margin-left: 15px;
+}
+
+/* Left -------------------------------- */
+
+.popover--left {
+  margin-right: 15px;
+}
+
+
+/* Popover -----------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Visibility -------------------------- */
+
+.popover-trigger:hover .popover,
+.popover.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popover {
+  opacity: 0;
+  visibility: hidden;
+  width: 300px;
+  z-index: 300;
+}
+
+
+/* Animation ---------------------------------------------------
+---------------------------------------------------------------- */
+
+.popover-trigger:hover .has-animation {
+  @include transform(translateX(-50%) translateY(0) scale(1));
+}
+
+/* Top --------------------------------- */
+
+.popover--top.has-animation {
+  @include transform(translateX(-50%) translateY(20px) scale(.8));
+  @include transform-origin(bottom);
+}
+
+/* Bottom ------------------------------ */
+
+.popover--bottom.has-animation {
+  @include transform(translateX(-50%) translateY(-20px) scale(.8));
+  @include transform-origin(top);
+}
+
+/* Right ------------------------------- */
+
+.popover--right.has-animation.is-visible,
+.popover-trigger:hover .popover--right.has-animation.popover {
+  @include transform(translateX(0) translateY(-50%) scale(1));
+}
+
+.popover--right.has-animation {
+  @include transform(translateX(-20px) translateY(-50%) scale(.8));
+  @include transform-origin(left);
+}
+
+/* Left -------------------------------- */
+
+.popover--left.has-animation {
+  @include transform(translateX(-20%) translateY(-50px) scale(.8));
+  @include transform-origin(top);
+}
+
+
+/* Caret -------------------------------------------------------
+---------------------------------------------------------------- */
+
+.has-caret:after {
+  width: 14px;
+  height: 14px;
+  content: "";
+  @include transform(rotate(45deg));
+}
+
+.popover--bottom:after,
+.popover--top:after {
+  left: 50%;
+  margin-left: -6.5px;
+}
+
+.popover--right:after,
+.popover--left:after {
+  top: 50%;
+  margin-top: -6.5px;
+}
+
+/* Top --------------------------------- */
+
+.popover--top.has-caret:after {
+  bottom: -6.5px;
+}
+
+/* Bottom ------------------------------ */
+
+.popover--bottom.has-caret:after {
+  top: -6.5px;
+}
+
+/* Right ------------------------------- */
+
+.popover--right.has-caret:after {
+  left: -6.5px;
+}
+
+/* Left -------------------------------- */
+
+.popover--left.has-caret:after {
+  right: -6px;
+}
+
+
+/* Popover Direction -------------------------------------------
+---------------------------------------------------------------- */
+
+.popover--bottom, .popover--top {
+  left: 50%;
+  @include transform(translateX(-50%));
+}
+
+.popover--right, .popover--left {
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+
+/* Top --------------------------------- */
+
+.popover--top {
+  bottom: 100%;
+}
+
+/* Bottom ------------------------------ */
+
+.popover--bottom {
+  top: 100%;
+}
+
+/* Right ------------------------------- */
+
+.popover--right {
+  left: 100%;
+}
+
+/* Left -------------------------------- */
+
+.popover--left {
+  right: 100%;
+}
+
+
+/* Popover Alignment -------------------------------------------
+---------------------------------------------------------------- */
+
+.popover--leftAligned {
+
+}
+
+.popover--rightAligned {
+
+}
+
+
+/* Popover Styles ----------------------------------------------
+---------------------------------------------------------------- */
+
+
+/* Default ----------------------------- */
+
+.popover--default,
+.popover--default.has-caret:after {
+  background-color: $white;
+}
+
+.popover--default {
+  @include box-shadow(0 0 1px 1px rgba(31,45,61,.1));
+}
+
+/* Top */
+
+.popover--top.popover--default.has-caret:after {
+  @include box-shadow(1px 1px 0 0 rgba(31,45,61,.1));
+}
+
+/* Bottom */
+
+.popover--bottom.has-caret:after {
+  @include box-shadow(-1px -1px 0 0 rgba(31,45,61,.1));
+}
+
+/* Right */
+
+.popover--right.popover--default.has-caret:after {
+  @include box-shadow(-1px 1px 0 0 rgba(31,45,61,.1));
+}
+
+/* Left */
+
+.popover--left.has-caret:after {
+  @include box-shadow(0 0 -1px 1px rgba(31,45,61,.1));
+}
+
+/* Positive ----------------------------- */
+
+.popover--positive,
+.popover--positive.has-caret:after {
+  background-color: $positive;
+  @include box-shadow(none);
+}
+
+
+/* Error ------------------------------- */
+
+.popover--error {
+
+}
+
+/* Dark -------------------------------- */
+
+.popover--dark {
+
+}
+
+.popover--dark,
+.popover--dark.has-caret:after {
+  background-color: palette(black, base);
+}
+
+.popover--dark {
+  @include box-shadow(0 0 1px 1px rgba(31,45,61,.1));
+}
+
+/* Top */
+
+.popover--top.popover--dark.has-caret:after {
+  @include box-shadow(1px 1px 0 0 rgba(31,45,61,.1));
+}
+
+/* Bottom */
+
+.popover--bottom.has-caret:after {
+  @include box-shadow(-1px -1px 0 0 rgba(31,45,61,.1));
+}
+
+/* Right */
+
+.popover--right.popover--dark.has-caret:after {
+  @include box-shadow(-1px 1px 0 0 rgba(31,45,61,.1));
+}
+
+/* Left */
+
+.popover--left.has-caret:after {
+  @include box-shadow(0 0 -1px 1px rgba(31,45,61,.1));
+}
+
+
+/* Popover Styles ----------------------------------------------
+---------------------------------------------------------------- */
+
+.popover-separator {
+
+}
+
+
+/* Media Query -------------------------------------------------
+---------------------------------------------------------------- */
+
+.popover-trigger.popover--breakPoint .popover,
+.popover-trigger.popover--breakPoint:hover .popover,
+.popover-trigger.popover--breakPoint.is-visible {
+  visibility: hidden;
+  display: none;
+}
+
+@media only screen and (min-width : 768px) {
+
+  .popover-trigger.popover--breakPoint .popover,
+  .popover-trigger.popover--breakPoint:hover .popover,
+  .popover-trigger.popover--breakPoint.is-visible {
+    visibility: visible;
+    display: inline-block;
+  }
+}

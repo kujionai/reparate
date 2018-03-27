@@ -1,0 +1,50 @@
+/* Font Size ---------------------------------------------------
+---------------------------------------------------------------- */
+
+.fontSize-xxxl {
+	font-size: 48px;
+	line-height: 58px;
+}
+
+.fontSize-xxl {
+	font-size: 38px;
+	line-height: 43px;
+}
+
+.fontSize-xl {
+	font-size: 34px;
+	line-height: 42px;
+}
+
+.fontSize-l {
+	font-size: 26px;
+	line-height: 32px;
+}
+
+.fontSize-m {
+	font-size: 22px;
+	line-height: 32px;
+}
+
+.fontSize-s {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.fontSize-xs, .inputGroup-context, p, button, input, select, textarea {
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.fontSize-xxs {
+	font-size: 14px;
+}
+
+.fontSize-xxxs {
+	font-size: 12px;
+	line-height: 21px;
+}
+
+.fontSize-0, .grid, .inputGroup {
+  font-size: 0;
+}

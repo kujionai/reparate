@@ -1,0 +1,11 @@
+/* Box Sizing --------------------------------------------------
+---------------------------------------------------------------- */
+
+.boxSizing-borderBox, .form-control-indicator, a, a:after, a:before, article, article:after, article:before, aside, aside:after, aside:before, button, button:after, button:before, code, code:after, code:before, details, details:after, details:before, div, div:after, div:before, fieldset, fieldset:after, fieldset:before, footer, footer:after, footer:before, form, form:after, form:before, header, header:after, header:before, input[type=email], input[type=number], input[type=password], input[type=search], input[type=submit], input[type=tel], input[type=text], input[type=url], main, main:after, main:before, nav, nav:after, nav:before, pre, pre:after, pre:before, section, section:after, section:before, select, summary, summary:after, summary:before, textarea, textarea:after, textarea:before {
+	box-sizing: border-box;
+}
+
+*, :after, :before {
+	margin: 0;
+	padding: 0;
+}

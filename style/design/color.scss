@@ -1,0 +1,253 @@
+/* Palette -----------------------------------------------------
+---------------------------------------------------------------- */
+
+$white: #ffffff;
+$positive: #13ce76;
+$warning: #ffa940;
+$negative: #ff2b00;
+
+$palettes: (
+  primary: (
+    base: #5081F5,
+    light: #3870f4,
+    xx-light: #e0e9fd
+  ),
+  secondary: (
+    base: #16D895,
+    light: #14c185,
+    xx-light: #E3F1FE
+  ),
+  black: (
+    base: #3C4650
+  ),
+  cloud: (
+    base: #8B90A1,
+    light: #CACFD3,
+    x-light: #e8eaed,
+    xx-light: #F6F7F8
+  )
+);
+
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+
+/* Color -------------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Primary ------------------------------- */
+
+.c-primary, .c-primary--hover:hover {
+  color: palette(primary, base);
+}
+
+.c-primaryXXLight, .c-primaryXXLight--hover:hover {
+  color: palette(primary, xx-light);
+}
+
+/* SVG */
+
+.c-primary svg *, .c-primary--hover:hover svg * {
+  fill: palette(primary, base);
+}
+
+.c-primaryXXLight svg *, .c-primaryXXLight--hover:hover svg * {
+  fill: palette(primary, xx-light);
+}
+
+/* Secondary ------------------------------- */
+
+.c-secondary, .c-secondary--hover:hover {
+  color: palette(secondary, base);
+}
+
+.c-secondaryXXLight, .c-secondaryXXLight--hover:hover {
+  color: palette(secondary, xx-light);
+}
+
+/* Black ------------------------------- */
+
+.c-black, .c-black--hover:hover {
+  color: palette(black, base);
+}
+
+/* Cloud ------------------------------- */
+
+.c-cloud, .c-cloud--hover:hover {
+  color: palette(cloud, base);
+}
+
+.c-cloudLight, .c-cloudLight--hover:hover {
+  color: palette(cloud, light);
+}
+
+.c-cloudXXLight, .c-cloudXXLight--hover:hover {
+  color: palette(cloud, xx-light);
+}
+
+/* SVG */
+
+.c-cloud svg *, .c-cloud--hover:hover svg * {
+  fill: palette(cloud, base);
+}
+
+.c-cloudLight svg *, .c-cloudLight--hover:hover svg * {
+  fill: palette(cloud, light);
+}
+
+.c-cloudXLight svg *, .c-cloudXLight--hover:hover svg * {
+  fill: palette(cloud, x-light);
+}
+
+.c-cloudXXLight svg *, .c-cloudXXLight--hover:hover svg * {
+  fill: palette(cloud, xx-light);
+}
+
+/* White ------------------------------- */
+
+.c-white, .c-white--hover:hover, .button--secondary:hover {
+  color: $white;
+}
+
+/* SVG */
+
+.c-white svg *, .c-white--hover:hover svg *, .button svg *, .button--secondary:hover svg * {
+  fill: $white;
+}
+
+.c-white svg * {
+  fill: $white;
+}
+
+
+/* Positive ----------------------------- */
+
+.c-positive, .c-positive--hover:hover {
+  color: $positive;
+}
+
+.c-positive svg *, .c-positive--hover:hover svg * {
+  fill: $positive;
+}
+
+/* Warning ----------------------------- */
+
+.c-warning {
+  color: $warning;
+}
+
+.c-warning svg *, .c-warning--hover:hover svg * {
+  fill: $warning;
+}
+
+/* Negative ---------------------------- */
+
+.c-negative, .c-negative--hover:hover {
+  color: $negative;
+}
+
+.c-negative svg *, .c-negative--hover:hover svg * {
+  fill: $negative;
+}
+
+
+/* Background --------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Primary ------------------------------- */
+
+.bg-primary, .bg-primary--hover:hover {
+  background-color: palette(primary, base);
+}
+
+.bg-primaryLight, .bg-primaryLight--hover:hover {
+  background-color: palette(primary, light);
+}
+
+.bg-primaryXXLight, .bg-primaryXXLight--hover:hover {
+  background-color: palette(primary, xx-light);
+}
+
+/* Secondary ------------------------------- */
+
+.bg-secondary, .bg-secondary--hover:hover {
+  background-color: palette(secondary, base);
+}
+
+.bg-secondaryLight, .bg-secondaryLight--hover:hover {
+  background-color: palette(secondary, light);
+}
+
+
+/* Black ------------------------------- */
+
+.bg-black {
+  background-color: palette(black, base);
+}
+
+/* Cloud ------------------------------- */
+
+.bg-cloud, .bg-cloud--hover:hover {
+  background-color: palette(cloud, base);
+}
+
+.bg-cloudXXLight, .bg-cloudXXLight--hover:hover {
+  background-color: palette(cloud, xx-light);
+}
+
+/* Transparent ------------------------- */
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+/* White ------------------------------- */
+
+.bg-white, .bg-white--hover:hover {
+  background-color: $white;
+}
+
+/* Translucent */
+
+.bg-white--translucent {
+  background-color: rgba(255,255,255,.98);
+}
+
+/* Positive ---------------------------- */
+
+/* Opaque */
+
+.bg-positive, .bg-positive--hover:hover {
+  background-color: $positive;
+}
+
+/* Translucent */
+
+.bg-positive--translucent {
+  background-color: rgba(19,206,102,.90);
+}
+
+.bg-positive--translucentLight {
+  background-color: rgba(19,206,102,.1);
+}
+
+/* Warning ----------------------------- */
+
+.bg-warning, .bg-warning--hover:hover {
+  background-color: $warning;
+}
+
+.bg-warning--translucent {
+  background-color: rgba(255,169,64,.1);
+}
+
+/* Negative ---------------------------- */
+
+.bg-negative, .bg-negative--hover:hover {
+  background-color: $negative;
+}
+
+.bg-negative--translucentLight {
+  background-color: rgba(255,43,0,.08);
+}

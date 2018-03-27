@@ -1,0 +1,28 @@
+/* Alignment ---------------------------------------------------
+---------------------------------------------------------------- */
+
+.textAlign-left, .textAlign-leftCenter--breakPoint {
+	text-align: left;
+}
+
+.textAlign-right, .textAlign-rightCenter--breakPoint {
+	text-align: right;
+}
+
+.textAlign-center, .button, .inputGroup-context, .textAlign-rightCenter--breakPoint, .textAlign-leftCenter--breakPoint {
+	text-align: center;
+	// display: block;
+	// width: 100%;
+}
+
+/* Media Query -------------------------------------------------
+---------------------------------------------------------------- */
+
+@media only screen and (min-width : 768px) {
+	.textAlign-leftCenter--breakPoint {
+		text-align: left;
+	}
+	.textAlign-rightCenter--breakPoint {
+		text-align: right;
+	}
+}

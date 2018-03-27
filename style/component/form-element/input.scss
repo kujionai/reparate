@@ -1,0 +1,143 @@
+/* Input -------------------------------------------------------
+---------------------------------------------------------------- */
+
+.inputGroup-context,
+.inputGroup>div {
+  display: inline-block;
+}
+
+.input, .inputGroup-context, .select select {
+  padding: 0 14px;
+  vertical-align: middle;
+  height: 50px;
+}
+
+.input, .select select {
+  @include transition-timing-function(ease-in-out);
+  @include transition-duration(.2s);
+  border-width: 0;
+  outline-style: none;
+}
+
+/* Default ----------------------------- */
+
+.input, input, input[type=text] {
+  @include appearance(none);
+  @include box-shadow(inset 0 0 0 1px palette(cloud, x-light));
+  background-color: $white;
+}
+
+.input:focus, input, input[type=text]:focus {
+  @include box-shadow(inset 0 0 0 1px palette(primary, base));
+}
+
+
+/* Input w/ Context --------------------------------------------
+---------------------------------------------------------------- */
+
+.inputGroup-context {
+  line-height: 50px;
+  color: palette(cloud, light);
+  background-color: palette(cloud, light);
+}
+
+/* Left -------------------------------- */
+
+/* Input */
+
+.inputGroup div:first-child .input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Context */
+
+.inputGroup div:first-child .inputGroup-context {
+  box-shadow: inset 0 1px 0 0 palette(cloud, x-light), inset 0 -1px 0 0 palette(cloud, x-light), inset 1px 0 0 palette(cloud, x-light);
+  border-radius: 4px 0 0 4px;
+}
+
+/* Right ------------------------------- */
+
+/* Input */
+
+.inputGroup div:last-child .input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Context */
+
+.inputGroup div:last-child .inputGroup-context {
+  box-shadow: inset 0 1px 0 0 palette(cloud, x-light), inset -1px 0 0 palette(cloud, x-light), inset 0 -1px 0 0 palette(cloud, x-light);
+  border-radius: 0 4px 4px 0;
+}
+
+
+/* Border Radius Override --------------------------------------
+---------------------------------------------------------------- */
+
+.borderRadius-0 {
+  border-radius: 0;
+}
+
+
+/* Placeholder -------------------------------------------------
+---------------------------------------------------------------- */
+
+::-webkit-input-placeholder {
+  color: palette(cloud, light);
+}
+
+:-moz-placeholder {
+  color: palette(cloud, light);
+}
+
+:-ms-input-placeholder {
+  color: palette(cloud, light);
+}
+
+
+/* Autofill ----------------------------------------------------
+---------------------------------------------------------------- */
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: palette(black, base);
+}
+
+input:-moz-autofill {
+  -moz-text-fill-color: palette(black, base);
+}
+
+input:-o-autofill {
+  -o-text-fill-color: palette(black, base);
+}
+
+input:-khtml-autofill {
+  -khtml-text-fill-color: palette(black, base);
+}
+
+input:focus:-webkit-autofill {
+  -webkit-text-fill-color: palette(black, base);
+}
+
+input:focus:-moz-autofill {
+  -moz-text-fill-color: palette(black, base);
+}
+
+input:focus:-o-autofill {
+  -o-text-fill-color: palette(black, base);
+}
+
+input:focus:-khtml-autofill {
+  -khtml-text-fill-color: palette(black, base);
+}
+
+/* Hide ms-clear (ie11) ----------------------------------------
+---------------------------------------------------------------- */
+
+input::-ms-clear {
+  display: none;
+  width:0;
+  height:0;
+}
